@@ -6,10 +6,7 @@ function App() {
   const [res, setRes] = useState("");
 
   const handleClick = (e) => {
-    setInput((prevInput) => {
-      if (prevInput[0] === "0") return (prevInput = e.target.value);
-      return prevInput + e.target.value;
-    });
+    setInput((prevInput) => prevInput + e.target.value);
   };
 
   const handleResult = () => {
