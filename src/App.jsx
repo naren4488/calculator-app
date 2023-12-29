@@ -10,7 +10,7 @@ function App() {
   };
 
   const handleResult = () => {
-    if(input === '')setRes('Error')
+    if (input === "") setRes("Error");
     else setRes(eval(input));
   };
 
@@ -30,9 +30,7 @@ function App() {
           setInput(e.target.value);
         }}
       />
-      {res && (
-        <div >{res}</div>
-      )}
+      {res !== "" && <div>{res}</div>}
 
       <div>
         <button value="7" onClick={(e) => handleClick(e)}>
